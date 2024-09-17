@@ -16,7 +16,7 @@ export const Header = () => {
             <Container>
                 <div className=" flex items-center justify-between ">
                     <div className="w-20 flex justify-center xl:mx-0 hover:scale-125 transition-all">
-                        <Link href="#hero" >
+                        <Link href="#hero" onClick={() => setMenuOpen(false)} >
                             <Image
                                 src={Logo}
                                 alt="logo"
