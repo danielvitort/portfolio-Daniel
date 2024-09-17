@@ -27,29 +27,33 @@ export const Header = () => {
                         < div
                             className="sm:hidden cursor-pointer"
 
-                            onClick={() => setMenuOpen(!MenuOpen)}
+
                         >
-                            {MenuOpen ? (
-                                <IconClose
-                                    width='2em'
-                                    height='2em'
-                                    className="text-secondary"
-                                />)
-                                : (
-                                    <IconMenu
+                            <div
+                                onClick={() => setMenuOpen(!MenuOpen)}
+                            >
+                                {MenuOpen ? (
+                                    <IconClose
                                         width='2em'
                                         height='2em'
                                         className="text-secondary"
-                                    />
-                                )}
+                                    />)
+                                    : (
+                                        <IconMenu
+                                            width='2em'
+                                            height='2em'
+                                            className="text-secondary"
+                                        />
+                                    )}
+                            </div>
                             <div
-                                className={`absolute xl:hidden top-12 left-0 w-full bg-header flex flex-col items-center gap-4 font-semibold text-lg transform transition-transform ${MenuOpen ? "opacity-100" : "opacity-0"}`}
+                                className={`absolute xl:hidden top-12 left-0 w-full bg-header flex flex-col items-center gap-4 font-semibold text-lg transform transition-transform ${MenuOpen ? "absolute" : "hidden"}`}
                                 style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
                             >
-                                <li className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><Link href="#about">Sobre</Link></li>
-                                <li className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><Link href="#skill">Habilidades</Link></li>
-                                <li className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><Link href="#projects">Projetos</Link></li>
-                                <li className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><Link href="#contacts">Contatos</Link></li>
+                                <li className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><Link onClick={() => setMenuOpen(false)} href="#about">Sobre</Link></li>
+                                <li className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><Link onClick={() => setMenuOpen(false)} href="#skill">Habilidades</Link></li>
+                                <li className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><Link onClick={() => setMenuOpen(false)} href="#projects">Projetos</Link></li>
+                                <li className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><Link onClick={() => setMenuOpen(false)} href="#contacts">Contatos</Link></li>
                             </div>
                         </div>
                         <ul className="hidden sm:flex items-center text-base lg:gap-16 sm:gap-10">
