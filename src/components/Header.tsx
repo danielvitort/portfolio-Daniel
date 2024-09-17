@@ -50,10 +50,10 @@ export const Header = () => {
                                 className={`absolute xl:hidden top-12 left-0 w-full bg-header flex flex-col items-center gap-4 font-semibold text-lg transform transition-transform ${MenuOpen ? "absolute" : "hidden"}`}
                                 style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
                             >
-                                <li className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><Link onClick={() => setMenuOpen(false)} href="#about">Sobre</Link></li>
-                                <li className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><Link onClick={() => setMenuOpen(false)} href="#skill">Habilidades</Link></li>
-                                <li className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><Link onClick={() => setMenuOpen(false)} href="#projects">Projetos</Link></li>
-                                <li className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><Link onClick={() => setMenuOpen(false)} href="#contacts">Contatos</Link></li>
+                                <Link onClick={() => setMenuOpen(false)} href="#about" className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><li>Sobre</li></Link>
+                                <Link onClick={() => setMenuOpen(false)} href="#skill" className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><li>Habilidades</li></Link>
+                                <Link onClick={() => setMenuOpen(false)} href="#projects" className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><li>Projetos</li></Link>
+                                <Link onClick={() => setMenuOpen(false)} href="#contacts" className="text-secondary list-none w-full text-center p-4 hover:bg-sky-500 transition-all"><li>Contatos</li></Link>
                             </div>
                         </div>
                         <ul className="hidden sm:flex items-center text-base lg:gap-16 sm:gap-10">
