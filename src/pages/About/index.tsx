@@ -8,8 +8,8 @@ const About = () => {
     return (
         <section id="about" className="bg-secondary text-primary  flex">
             <Container>
-                <div className="flex flex-col justify-center">
-                    <h3 className="text-center lg:text-6xl text-4xl font-bold  py-16">Sobre</h3>
+                <div className="flex flex-col justify-center mb-14">
+                    <h3 className="text-center lg:text-6xl text-4xl font-bold mt-1 py-16">Sobre</h3>
                     <div className="flex flex-col items-center">
                         <div className="flex justify-center flex-col md:flex-row lg:gap-10 gap-8 pb-10">
                             <motion.div
@@ -45,7 +45,7 @@ const About = () => {
                                 Estas ferramentas não apenas me capacitaram a criar aplicações dinâmicas e eficientes,
                                 mas também me desafiaram a expandir constantemente meu conhecimento e habilidades.
 
-                                <ol className="list-disc py-6 text-left">
+                                <ol className="list-disc pt-8 text-left">
                                     <li>Desenvolvimento Front-end e Back-end: Criação de interfaces interativas e sistemas robustos utilizando React, Node.js e Next.js.</li>
                                     <li>Expertise em TypeScript: Garantia de código limpo, tipado e de fácil manutenção, contribuindo para a eficiência e a escalabilidade dos projetos.</li>
                                     <li>Soluções orientadas ao usuário: Foco na experiência do usuário para criar aplicações intuitivas e de alto desempenho.</li>

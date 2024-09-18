@@ -10,7 +10,7 @@ const Skill = () => {
         <section id="skill" className="bg-primary text-secondary">
             <Container>
                 <div>
-                    <h3 className="text-center lg:text-6xl text-4xl font-bold py-16">Habilidades</h3>
+                    <h3 className="text-center lg:text-6xl text-4xl font-bold mt-1 py-16">Habilidades</h3>
                     <div className="">
                         <div className="grid xl:grid-cols-4 sm:grid-cols-3 grid-cols-1 justify-items-center lg:gap-10 gap-4 pb-10">
                             <motion.div

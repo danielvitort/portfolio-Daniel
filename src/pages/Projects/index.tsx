@@ -16,7 +16,7 @@ const Projects = () => {
         <section id="projects" className="bg-secondary text-primary flex pb-14">
             <Container>
                 <div>
-                    <h3 className="text-center lg:text-6xl text-4xl font-bold py-16">Projetos</h3>
+                    <h3 className="text-center lg:text-6xl text-4xl font-bold mt-1 py-16">Projetos</h3>
                     <div className="grid md:grid-cols-2 gap-4">
                         <motion.div
                             className=" border-2 border-slate-400 rounded-md flex flex-col items-center p-5  gap-4 hover:bg-blue-100 hover:border-primary"

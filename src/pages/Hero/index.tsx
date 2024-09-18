@@ -15,9 +15,9 @@ const Hero = () => {
     return (
         <section id="hero" className="bg-primary text-white h-lvh flex items-center">
             <Container>
-                <div className="grid lg:grid-cols-2 grid-cols-1">
+                <div className="grid lg:grid-cols-2 grid-cols-1 sm:mt-0 sm:mb-0 mt-16">
                     <div className="relative">
-                        <div className="absolute lg:w-[130%] w-[120%] -top-1/3 right-0">
+                        <div className="absolute lg:w-[130%] w-[120%] sm:-top-1/3 -top-1/4 right-0">
                             <AnimatedBackground />
                         </div>
                         <div className="relative flex items-center justify-center">
@@ -34,17 +34,19 @@ const Hero = () => {
                         >
                             Daniel Vitor da Trindade
                         </motion.div>
-                        <TypeAnimation
-                            sequence={[
-                                'Desenvolvedor Full Stack',
-                                1000,
-                            ]}
-                            wrapper="div"
-                            speed={20}
-                            style={{ display: 'inline-block' }}
-                            repeat={Infinity}
-                            className="text-secondary sm:text-4xl text-3xl lg:h-14 h-14"
-                        />
+                        <div className="flex items-center justify-center text-secondary sm:text-4xl text-3xl lg:h-14 h-14">
+                            <TypeAnimation
+                                sequence={[
+                                    'Desenvolvedor Full Stack',
+                                    1000,
+                                ]}
+                                wrapper="div"
+                                speed={20}
+                                style={{ display: 'inline-block' }}
+                                repeat={Infinity}
+
+                            />
+                        </div>
                         <div className="flex gap-5 pt-5">
                             <motion.div
                                 initial={{ opacity: 0 }}
@@ -57,7 +59,7 @@ const Hero = () => {
                                         width='3em'
                                         height='3em'
 
-                                        className="text-slate-600 hover:text-indigo-900"
+                                        className="text-slate-600 hover:text-indigo-900 hover:scale-125 transition-all"
                                     />
                                 </Link>
                             </motion.div>
@@ -71,7 +73,7 @@ const Hero = () => {
                                     <IconBxlLinkedinSquare
                                         width='3em'
                                         height='3em'
-                                        className="text-slate-600 hover:text-blue-600"
+                                        className="text-slate-600 hover:text-blue-600 hover:scale-125 transition-all"
                                     />
                                 </Link>
                             </motion.div>
@@ -85,7 +87,7 @@ const Hero = () => {
                                     <IconEmail
                                         width='3em'
                                         height='3em'
-                                        className="text-slate-600 hover:text-white"
+                                        className="text-slate-600 hover:text-white hover:scale-125 transition-all"
                                     />
                                 </Link>
                             </motion.div>
