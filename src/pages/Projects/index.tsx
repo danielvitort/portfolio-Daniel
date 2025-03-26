@@ -10,6 +10,7 @@ import Ecommerce from "@/assets/images/projects/ecommerce.jpg"
 import Chat from "@/assets/images/projects/Chat.jpg"
 import PetShop from "@/assets/images/projects/PetShop.jpg"
 import { motion } from "framer-motion"
+import LojaWpp from "@/assets/images/projects/loja-WPP.jpg"
 
 const Projects = () => {
     return (
@@ -18,6 +19,41 @@ const Projects = () => {
                 <div>
                     <h3 className="text-center lg:text-6xl text-4xl font-bold mt-1 py-16">Projetos</h3>
                     <div className="grid md:grid-cols-2 gap-4">
+                        <motion.div
+                            className=" border-2 border-slate-400 rounded-md flex flex-col items-center p-5  gap-4 hover:bg-blue-100 hover:border-primary"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.5, delay: 0.3 }}
+                        >
+                            <div className="text-2xl font-bold text-center">Plataforma de Venda de Comida Japonesa com WhatsApp </div>
+                            <Image className="lg:h-80" src={LojaWpp} alt="Projeto amigo secreto" width={450} quality={100} />
+                            <div className="flex flex-col">
+                                <div >Uma plataforma intuitiva e responsiva para a venda de comida japonesa, proporcionando uma experiência de compra fluida e eficiente.
+                                    O usuário pode navegar pelo catálogo, adicionar itens ao pedido e finalizar a compra diretamente pelo WhatsApp.
+                                </div>
+                                <div className="flex pt-2">
+                                    <span className="font-bold">Tecnologias:
+                                        NextJS, TypeScript, TailwindCSS, Shadcn/ui, Zod.</span>
+                                </div>
+                            </div>
+                            <motion.div
+                                className="flex gap-2 items-center mt-2"
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: 50 }}
+                                transition={{ duration: 0.5, delay: 0.2 }}
+                            >                                <IconLogoGithub width="2.5em" height="2.5em" />
+                                <span>Repositório:</span>
+                                <Link
+                                    href="https://github.com/danielvitort/Loja-WPP"
+                                    className="flex items-center border-2 border-slate-400 text-primary font-bold px-5 py-1 rounded-3xl hover:border-primary hover:bg-sky-950 hover:text-white"
+                                    target="_banq"
+                                >
+                                    <span>Front End</span>
+                                </Link>
+                            </motion.div>
+                        </motion.div>
                         <motion.div
                             className=" border-2 border-slate-400 rounded-md flex flex-col items-center p-5  gap-4 hover:bg-blue-100 hover:border-primary"
                             initial={{ opacity: 0 }}

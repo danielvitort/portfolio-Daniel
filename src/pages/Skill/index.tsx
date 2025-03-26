@@ -157,7 +157,7 @@ const Skill = () => {
                                     <IconDatabase className="text-zinc-300" width='4em' height='4em' />
                                 </div>
                                 <div className="flex flex-col items-center">
-                                    <div className="text-xl font-bold sm:pb-0 pb-2">Bancos de Dados</div>
+                                    <div className="text-xl font-bold sm:pb-0 pb-2">Banco de Dados</div>
                                     <Link
                                         href="https://alunos.b7web.com.br/media/certificates/certificado_29071.jpg"
                                         className="flex gap-3 items-center border-2 border-slate-400 text-slate-200 px-5 py-1 rounded-3xl sm:mt-5 hover:border-white hover:bg-secondary hover:text-primary"
